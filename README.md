@@ -5,7 +5,7 @@
    ```bash
    cd ~/Destination
    ```
-For example, if you saved it to your desktop, you would need to run:
+   For example, if you saved it to your desktop, you would need to run:
    ```bash
    cd ~/Desktop
    ```

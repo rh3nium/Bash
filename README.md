@@ -19,5 +19,5 @@
 3. To execute the program in the Terminal, run:
 
    ```bash
-   ./case-sac_statement.sh
+   ./filename.sh
    ```

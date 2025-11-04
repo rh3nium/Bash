@@ -40,7 +40,6 @@
       z-index: 0;
       mix-blend-mode: screen;
     }
-
     @keyframes scanMove {
       0% { background-position: 0 0; }
       100% { background-position: 0 200px; }
@@ -128,23 +127,25 @@
       display: block;
       margin: 10px auto;
       border-radius: 8px;
+      height: 100px; width: auto;
     }
 
     ul {
       list-style-type: none;
-      padding-left: 0;
+      padding: 10px;
     }
     ul li::before {
-      content: "➜ ";
-      color: #00ff00;
+      content: "＄ ";
+      color: cyan;
+      font-weight: bold;
     }
     ol {
-      padding-left: 20px;
+      padding-left: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Bash Repository<span class="cursor"></span></h1>
+  <h1>＄ Bash Repository<span class="cursor"></span></h1>
 
   <div class="box">
     <h2>🐚 Bash Overview</h2>

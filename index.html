@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bash Repository</title>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Consolas', monospace;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.05) 0px,
+        rgba(0, 255, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+      animation: scanMove 6s linear infinite alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes scanMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 200px; }
+    }
+
+    h1 {
+      font-family: 'Silkscreen', cursive;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      color: #00ff00;
+      margin-top: 40px;
+      text-shadow: 0 0 20px #00ff00;
+      z-index: 1;
+      display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 35px;
+      background-color: #00ff00;
+      margin-left: 5px;
+      vertical-align: middle;
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+
+    .box {
+      background-color: #1a1a1a;
+      border: 1px solid #00ff00;
+      box-shadow: 0 0 15px white;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px 30px;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+      transform: scale(1);
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px white;
+    }
+
+    h2 {
+      color: #00ff00;
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    p, li {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #333;
+      padding: 3px 6px;
+      border-radius: 4px;
+      color: #00ff99;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    pre {
+      background-color: #222;
+      border-left: 3px solid #00ff00;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "➜ ";
+      color: #00ff00;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bash Repository<span class="cursor"></span></h1>
+
+  <div class="box">
+    <h2>🐚 Bash Overview</h2>
+    <img height="200" alt="image" src="https://github.com/user-attachments/assets/a60bb468-4536-4f89-8196-646a582c336a" />
+    <p><b>Bash</b> (short for <b>Bourne Again Shell</b>) is a command-line language and scripting shell used primarily on Unix and Linux systems to interact with the operating system and automate tasks.</p>
+    <p>It serves both as an interactive shell—where users can execute commands, manage files, and control processes—and as a scripting language that allows writing programs (called shell scripts) to perform repetitive or complex operations efficiently.</p>
+    <ul>
+      <li>Bash supports features like variables, loops, conditionals, and functions, making it powerful for system administration, automation, and DevOps workflows.</li>
+      <li>Bash is the default shell in most Linux distributions and is widely used for server management, build scripts, and automation pipelines.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>📁 Sub-folders in the repository</h2>
+    <ul>
+      <li><a href="https://github.com/rh3nium/Bash/tree/main/Basics">Basics</a></li>
+      <li><a href="https://github.com/rh3nium/Bash/tree/main/Conditional%20Statements">Conditional Statements</a></li>
+      <li><a href="https://github.com/rh3nium/Bash/tree/main/Task%20Automation">Task Automation</a></li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>🧩 Steps to Clone and Run this repository</h2>
+    <ol>
+      <li>Run the git clone command to make a copy of this repository on your local machine:
+        <pre><code>git clone https://github.com/rh3nium/Bash</code></pre>
+      </li>
+      <li>Run the following command to make the file executable:
+        <pre><code>chmod +x ./filename.sh</code></pre>
+      </li>
+      <li>To execute the program in the Terminal, run:
+        <pre><code>./filename.sh</code></pre>
+      </li>
+    </ol>
+  </div>
+
+  <div class="box">
+    <h2>🔧 Usage</h2>
+    <p>Usage information can be viewed at <a href="USAGE.md">USAGE.md</a>.</p>
+  </div>
+</body>
+</html>

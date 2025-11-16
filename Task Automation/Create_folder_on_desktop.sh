@@ -1,4 +1,4 @@
-# Create folder on the desktop
+##-- Create folder on the desktop --##
 
 cd ~/Desktop
 mkdir sample_folder
